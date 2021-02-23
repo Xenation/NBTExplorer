@@ -905,8 +905,21 @@ namespace NBTExplorer.Windows
             }
         }
 
-        #endregion
+		#endregion
 
-        #endregion
-    }
+		#endregion
+
+		private void heavyChunkFinderToolStripMenuItem_Click(object sender, EventArgs e) {
+			FindHeavy form = new FindHeavy(_nodeTree.SelectedNode.Tag as DataNode);
+			if (form.ShowDialog() == DialogResult.OK) {
+				if (form.searchResult != null) {
+					_controller.SelectNode(form.searchResult);
+					_controller.ExpandSelectedNode();
+					_controller.ScrollNode(form.searchResult);
+				} else {
+					MessageBox.Show("Chunk not Found.");
+				}
+			}
+		}
+	}
 }

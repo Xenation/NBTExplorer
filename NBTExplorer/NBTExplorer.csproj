@@ -117,6 +117,12 @@
     <Compile Include="Windows\FindBlock.Designer.cs">
       <DependentUpon>FindBlock.cs</DependentUpon>
     </Compile>
+    <Compile Include="Windows\FindHeavy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\FindHeavy.Designer.cs">
+      <DependentUpon>FindHeavy.cs</DependentUpon>
+    </Compile>
     <Compile Include="Windows\FindReplace.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -230,6 +236,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Windows\FindBlock.resx">
       <DependentUpon>FindBlock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\FindHeavy.resx">
+      <DependentUpon>FindHeavy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Windows\FindReplace.resx">
       <DependentUpon>FindReplace.cs</DependentUpon>
